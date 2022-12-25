@@ -3,7 +3,7 @@
 -- returns a message accordingly. 
 -- The function has to take the hourly consumption of an electrical device, the hours of daily use, and the maximum monthly consumption allowed.
 -- (Monthly usage = consumption (kW) * hours of daily use (h) * 30 days).
-monthlyusage k h : Double->Double->String
-monthlyusage k h = k * h * 30
- if monthlyusage>60 then "Not allow"
- else "Allow"
+monthlyusage :: Double -> Double -> Double -> String
+monthlyusage consumption = 
+ let consumption k h = k * h * 30  
+   in if consumption > 60 then "Over" else "Normal"
