@@ -11,9 +11,9 @@ the sum of squares for the product and quotient la'
  (a.b)^2 + (a/b)^2-}
 f5 :: Double->Double-> String
 f5 a b =
-    let sqrProd =  xyProd^2 where xyProd = x * y
-    in  if y /= 0 then show ( sqrProd +  sqrQuot)
+    let cantich =  tich^2 where tich = a * b
+    in  if b /= 0 then show ( cantich +  canthuong)
         else "The division is not possible"
     where
-        sqrQuot = let xyQuot = (/) x y
-                        in   xyQuot^2
+        canthuong = let tich = (/) a b
+                        in   thuong^2
